@@ -115,7 +115,7 @@ class TicTacToeGUI:
         self.root.title("Tic-Tac-Toe")
 
         self.game = TicTacToe()
-        self.agent = train_agent(1000000)
+        self.agent = train_agent(10000)
         self.buttons = [[None for _ in range(BOARD_SIZE)] for _ in range(BOARD_SIZE)]
 
         self.create_widgets()
